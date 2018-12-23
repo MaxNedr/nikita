@@ -1,0 +1,16 @@
+.body {
+    font-family: 'Lato', sans-serif;
+}
+.title{
+    background-color: #F6DD66;
+    border-radius: 5px;
+    font-size: 35px;
+    text-transform: uppercase;
+    min-width: 265px;
+    padding: 5px;
+    text-align: center;
+}
+.title:hover{
+    background-color: #f9e766;
+    text-shadow: 2px 2px 3px #eee;
+}
