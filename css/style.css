@@ -14,3 +14,14 @@
     background-color: #f9e766;
     text-shadow: 2px 2px 3px #eee;
 }
+.menu{
+    font-size: 20px;
+    font-weight: 600;
+    color: #7c7e80  ;
+}
+
+.main_img{
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/bmw_main.jpg");
+}
