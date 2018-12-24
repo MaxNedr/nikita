@@ -1,7 +1,9 @@
 .body {
     font-family: 'Lato', sans-serif;
+    position: relative;
 }
-.title{
+
+.title {
     background-color: #F6DD66;
     border-radius: 5px;
     font-size: 35px;
@@ -10,18 +12,39 @@
     padding: 5px;
     text-align: center;
 }
-.title:hover{
+
+.title:hover {
     background-color: #f9e766;
     text-shadow: 2px 2px 3px #eee;
 }
-.menu{
+
+.menu {
     font-size: 20px;
     font-weight: 600;
-    color: #7c7e80  ;
+    color: #7c7e80;
 }
 
-.main_img{
-    width: 500px;
-    height: 500px;
-    background-image: url("../img/bmw_main.jpg");
+.main_img {
+    background: url("../img/bmw_main.jpg") no-repeat 100% 100%;
+    background-size: cover;
+}
+
+.plate_wrapper {
+
+    position: absolute;
+    top: 250px;
+    left: 300px;
+}
+
+.plate {
+    color: rgb(19, 19, 19);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    filter: brightness(150%);
+}
+
+.diagnostik{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+
 }
