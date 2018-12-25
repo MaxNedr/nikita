@@ -23,9 +23,10 @@
     font-weight: 600;
     color: #7c7e80;
 }
-
-
-
+.menu:hover{
+    filter: brightness(50%);
+    transform: scale(1.2,1.2);
+}
 .plate_wrapper {
 
     position: absolute;
@@ -69,25 +70,30 @@
     font-family: 'Lato', sans-serif;
 
 }
-.advantage{
+
+.advantage {
     min-height: 250px;
     width: auto;
     margin-top: 50px;
     margin-bottom: 75px;
 }
-.adv{
+
+.adv {
     max-width: 238px;
     min-width: 190px;
     color: rgb(19, 19, 19);
 }
+
 .first_advantage {
 
     background-color: #f9e766;
 }
-.first_advantage p{
+
+.first_advantage p {
     font-size: 27px;
 }
-.first_advantage span{
+
+.first_advantage span {
     font-size: 16px;
 }
 
@@ -95,51 +101,111 @@
 
     background-color: #ff6161;
 }
-.second_advantage p{
+
+.second_advantage p {
     font-size: 27px;
 }
-.second_advantage span{
+
+.second_advantage span {
     font-size: 16px;
 }
-.third_advantage{
+
+.third_advantage {
 
     background-color: #30dbff;
 }
-.third_advantage p{
+
+.third_advantage p {
     font-size: 27px;
 }
-.third_advantage span{
+
+.third_advantage span {
     font-size: 16px;
 }
-.four_advantage{
+
+.four_advantage {
 
     background-color: #75cba8;
 }
-.four_advantage p{
+
+.four_advantage p {
     font-size: 27px;
 }
-.four_advantage span{
+
+.four_advantage span {
     font-size: 16px;
 }
-.wrapper_p{
+
+.wrapper_p {
     min-height: 118px;
 }
-.what_we_check{
+
+.what_we_check {
     font-size: 50px;
     margin-bottom: 100px;
 }
-.car_top{
+
+.car_top {
     height: 500px;
     width: 1140px;
     background: url("../img/car_top.png") no-repeat 100% 100%;
     background-size: contain;
     background-position-x: center;
 }
-.car_body{
+
+.car_body {
     margin-top: -83px;
 }
-.car_body span{
+
+.car_body span {
     display: block;
     padding: 0 3px;
     background-color: #f9e766;
+}
+.car_body span:hover {
+    text-decoration: underline;
+}
+.car_body span:hover + .car_body_img{
+    filter: brightness(50%);
+}
+.car_body_img:hover {
+     filter: brightness(50%);
+ }
+
+
+.wrapper_car_body_center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.car_over {
+    margin: 0 75px;
+}
+
+.car_over:hover {
+    text-decoration: underline;
+}
+.icon_img:hover .car_over{
+    filter: brightness(50%);
+}
+.icon_img:hover {
+    filter: brightness(50%);
+}
+
+
+.car_over p {
+    text-align: center;
+    min-width: 155px;
+
+}
+
+.car_over p span {
+    background-color: #f9e766
+}
+
+.icon_img {
+    max-height: 39px;
+    max-width: 39px;
+    padding-bottom: 5px;
 }
