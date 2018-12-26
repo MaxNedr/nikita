@@ -24,10 +24,11 @@
     color: #7c7e80;
 }
 
-.menu:hover{
+.menu:hover {
     filter: brightness(50%);
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
+
 .plate_wrapper {
 
     position: absolute;
@@ -163,16 +164,18 @@
     padding: 0 3px;
     background-color: rgba(246, 221, 102, 1)
 }
+
 .car_body span:hover {
     background-color: #30dbff;
 }
-.car_body span:hover + .car_body_img{
+
+.car_body span:hover + .car_body_img {
     filter: brightness(50%);
 }
-.car_body_img:hover {
-     filter: brightness(50%);
- }
 
+.car_body_img:hover {
+    filter: brightness(50%);
+}
 
 .wrapper_car_body_center {
     margin: 0 auto;
@@ -187,13 +190,14 @@
 .car_over span:hover {
     background-color: #30dbff;
 }
-.icon_img:hover .car_over{
-    filter: brightness(50%);
-}
-.icon_img:hover {
+
+.icon_img:hover .car_over {
     filter: brightness(50%);
 }
 
+.icon_img:hover {
+    filter: brightness(50%);
+}
 
 .car_over p {
     text-align: center;
@@ -210,20 +214,56 @@
     max-width: 39px;
     padding-bottom: 5px;
 }
-.send_request{
+
+.send_request {
     width: 100%;
     background-color: rgba(246, 221, 102, 1);
     margin: 70px 0;
     padding: 50px 15px;
 }
-.wrapper_send_out{
+
+.wrapper_send_out {
     background: url("../img/mv2.png") no-repeat left 100%;
 
 }
-.wrapper_send{
+
+.wrapper_send {
     background: url("../img/mv22.png") no-repeat right 100%;
 
 }
-.button_font{
-    font-size: 25px ;
+
+.button_font {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.min_w {
+    min-width: 150px;
+}
+
+.how_we_work {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    background-color: #F9F0BB;
+    width: 33%;
+    min-height: 300px;
+}
+
+.how_we_work span {
+    margin-top: 25px;
+    font-size: 130%;
+}
+
+.wrapper_p_down {
+    font-size: 55px;
+
+}
+.button_font_down {
+    font-size: 25px;
+    line-height: 33px;
+    height: auto;
+    white-space: normal;
 }
