@@ -1,10 +1,10 @@
 .body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     position: relative;
 }
 
 .title {
-    background-color: #F6DD66;
+    background-color: rgba(246, 221, 102, 1);
     border-radius: 5px;
     font-size: 35px;
     text-transform: uppercase;
@@ -14,7 +14,7 @@
 }
 
 .title:hover {
-    background-color: #f9e766;
+    background-color: rgba(246, 221, 102, 1);
     text-shadow: 2px 2px 3px #eee;
 }
 
@@ -23,6 +23,7 @@
     font-weight: 600;
     color: #7c7e80;
 }
+
 .menu:hover{
     filter: brightness(50%);
     transform: scale(1.2,1.2);
@@ -54,7 +55,7 @@
     font-size: 28px;
     padding: 3px 0;
     line-height: 1.45;
-    background-color: #f9e766;
+    background-color: rgba(246, 221, 102, 1);
     text-shadow: 2px 2px 3px #f9e766;
 }
 
@@ -86,7 +87,7 @@
 
 .first_advantage {
 
-    background-color: #f9e766;
+    background-color: rgba(246, 221, 102, 1);
 }
 
 .first_advantage p {
@@ -160,10 +161,10 @@
 .car_body span {
     display: block;
     padding: 0 3px;
-    background-color: #f9e766;
+    background-color: rgba(246, 221, 102, 1)
 }
 .car_body span:hover {
-    text-decoration: underline;
+    background-color: #30dbff;
 }
 .car_body span:hover + .car_body_img{
     filter: brightness(50%);
@@ -183,8 +184,8 @@
     margin: 0 75px;
 }
 
-.car_over:hover {
-    text-decoration: underline;
+.car_over span:hover {
+    background-color: #30dbff;
 }
 .icon_img:hover .car_over{
     filter: brightness(50%);
@@ -201,11 +202,28 @@
 }
 
 .car_over p span {
-    background-color: #f9e766
+    background-color: rgba(246, 221, 102, 1)
 }
 
 .icon_img {
     max-height: 39px;
     max-width: 39px;
     padding-bottom: 5px;
+}
+.send_request{
+    width: 100%;
+    background-color: rgba(246, 221, 102, 1);
+    margin: 70px 0;
+    padding: 50px 15px;
+}
+.wrapper_send_out{
+    background: url("../img/mv2.png") no-repeat left 100%;
+
+}
+.wrapper_send{
+    background: url("../img/mv22.png") no-repeat right 100%;
+
+}
+.button_font{
+    font-size: 25px ;
 }
