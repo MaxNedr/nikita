@@ -303,3 +303,34 @@
     width: 100%;
     border-radius: 15px;
 }
+.price_text{
+    color: #577083;
+    line-height: 2em;
+
+}
+.price h2{
+    color: #36B5CD;
+    font-weight: 600;
+}
+.price_head h3{
+    letter-spacing: 0.08em;
+    font-weight: 600;
+
+}
+.price_head{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.price_view:hover{
+    filter: brightness(92%);
+    transform: scale(1.01,1.01);
+}
+.maps{
+    margin-top: 50px;
+
+}
+.maps iframe{
+    width: 100%;
+    min-height: 350px;
+}
