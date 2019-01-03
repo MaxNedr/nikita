@@ -144,7 +144,8 @@
 
 .what_we_check {
     font-size: 50px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .car_top {
@@ -266,4 +267,38 @@
     line-height: 33px;
     height: auto;
     white-space: normal;
+}
+.textGuarantee span{
+    letter-spacing: 0.08em;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+
+
+}
+.textGuarantee p{
+    color: #858585;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.textGuarantee{
+    text-align: center;
+    padding: 15px;
+
+}
+.icon img{
+    max-width: 150px;
+}
+.work_for_result{
+    background-color: rgba(255, 222, 95, 0.6);
+}
+.price_img{
+    width: 100%;
+
+}
+.price_img img{
+    width: 100%;
 }
