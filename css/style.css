@@ -328,9 +328,25 @@
 }
 .maps{
     margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 .maps iframe{
     width: 100%;
     min-height: 350px;
+}
+.contacts{
+    background-color: rgba(255, 222, 95, 0.6);
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.contacts span{
+
+    font-weight: 600;
+}
+.copyright{
+    font: normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    color: #2F2E2E;
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class=" container body">
+<body class=" body">
 <header class=" container align-items-center d-flex justify-content-between">
     <div class="logo m-1"><img src="img/Logo_prime.webp" alt="logo"></div>
     <div class="label m-1"><p class="title">ПОДБОР АВТО ПОД КЛЮЧ</p></div>
@@ -81,7 +81,7 @@
             </div>
         </div>
         <div
-            class="container wrapper_over_icon d-flex flex-column align-items-center flex-nowrap justify-content-center">
+                class="container wrapper_over_icon d-flex flex-column align-items-center flex-nowrap justify-content-center">
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
                     <img src="img/tormoz.webp" alt="" class="icon_img">
@@ -133,36 +133,40 @@
         </div>
     </div>
 </div>
-<div class=" send_request ">
-   <div class=" container wrapper_send_out">
-       <div class="wrapper_send d-flex flex-column flex-nowrap justify-content-center">
-           <h1 class="text-center ">Оставьте заявку на подбор</h1>
-           <form method="post"
-                 class="  d-flex flex-column flex-nowrap justify-content-center align-content-center align-items-center">
-               <div class="form-group min_w w-25 m-3">
-                   <input type="text" class="form-control border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp"
-                          placeholder="Имя">
-               </div>
-               <div class="form-group min_w w-25 m-3">
-                   <input type="tel" class="form-control border-secondary " id="exampleInputPassword1" placeholder="Телефон">
-               </div>
+<div class="">
+    <div class=" send_request ">
+        <div class=" container wrapper_send_out">
+            <div class="wrapper_send d-flex flex-column flex-nowrap justify-content-center">
+                <h1 class="text-center ">Оставьте заявку на подбор</h1>
+                <form method="post"
+                      class="  d-flex flex-column flex-nowrap justify-content-center align-content-center align-items-center">
+                    <div class="form-group min_w w-25 m-3">
+                        <input type="text" class="form-control border-secondary" id="exampleInputEmail1"
+                               aria-describedby="emailHelp"
+                               placeholder="Имя">
+                    </div>
+                    <div class="form-group min_w w-25 m-3">
+                        <input type="tel" class="form-control border-secondary " id="exampleInputPassword1"
+                               placeholder="Телефон">
+                    </div>
 
-               <button type="submit" class="min_w btn btn-primary m-3 w-25 button_font">Отправить</button>
-           </form>
-       </div>
-   </div>
+                    <button type="submit" class="min_w btn btn-primary m-3 w-25 button_font">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="container text-center what_we_check ">
     <h1>&nbsp;— Как мы работаем —&nbsp;</h1>
 </div>
 
-<div class="advantage_down d-flex  justify-content-around">
+<div class="container advantage_down d-flex  justify-content-around">
     <div class="how_we_work  m-1 p-2 col-12 col-sm-auto col-md-auto col-xl-auto text-center ">
         <div class="wrapper_p_down mb-2 mt-4"><p><b>1</b></p></div>
         <span>Обращение к нам, консультация, заключение договора</span>
     </div>
     <div class="how_we_work   m-1 p-2 col-12 col-sm-auto col-md-auto col-xl-auto text-center">
-        <div class="wrapper_p_down mb-2 mt-4"><p> <b>2</b></p></div>
+        <div class="wrapper_p_down mb-2 mt-4"><p><b>2</b></p></div>
         <span>В короткие сроки подбираем для вас автомобиль. При подборе ведется фото и видео отчет</span>
     </div>
     <div class="how_we_work  m-1 p-2 col-12 col-sm-auto col-md-auto col-xl-auto text-center">
@@ -172,7 +176,7 @@
 
 </div>
 
-<div class="button_help d-flex justify-content-center">
+<div class=" container button_help d-flex justify-content-center">
     <button class="min_w btn btn-primary m-3 w-50  button_font_down mt-5">Подобрать лучший автомобиль</button>
 </div>
 
@@ -180,44 +184,50 @@
     <h1>&nbsp;— Мы&nbsp;предоставляем 4&nbsp;вида гарантии —&nbsp;</h1>
 </div>
 
-<div class="fourGuarantees container row d-flex flex-column flex-nowrap justify-content-center">
-    <div class="wrapperGuarantees row">
-        <div class="guarantee col-6 mb-3 p-3 d-flex flex-nowrap flex-row justify-content-around">
-            <div class="icon">
-                <img src="img/hands.webp" alt="">
+<div class="container">
+    <div class=" fourGuarantees  row d-flex flex-column flex-nowrap justify-content-center">
+        <div class="wrapperGuarantees row">
+            <div class="guarantee col-6 mb-3 p-3 d-flex flex-nowrap flex-row justify-content-around">
+                <div class="icon">
+                    <img src="img/hands.webp" alt="">
+                </div>
+                <div class="textGuarantee">
+                    <span>100% гарантия юридической чистоты</span>
+                    <p>Вы покупаете автомобиль полностью юридически чистым, без залогов, кредитов и прочих
+                        ограничений.</p>
+                </div>
             </div>
-            <div class="textGuarantee">
-                <span>100% гарантия юридической чистоты</span>
-                <p>Вы покупаете автомобиль полностью юридически чистым, без залогов, кредитов и прочих ограничений.</p>
+            <div class="guarantee col-6 mb-3 p-3 d-flex flex-nowrap flex-row justify-content-around ">
+                <div class="icon"><img src="img/head.webp" alt=""></div>
+                <div class="textGuarantee ">
+                    <span>Проверка собственника автомобиля</span>
+                    <p> Мы проводим проверку продавца на наличие долговых обязательств перед государственными органами,
+                        банками и т.п.</p>
+                </div>
             </div>
         </div>
-        <div class="guarantee col-6 mb-3 p-3 d-flex flex-nowrap flex-row justify-content-around ">
-            <div class="icon"><img src="img/head.webp" alt=""></div>
-            <div class="textGuarantee ">
-                <span>Проверка собственника автомобиля</span>
-                <p> Мы проводим проверку продавца на наличие долговых обязательств перед государственными органами, банками и т.п.</p>
+        <div class="wrapperGuarantees row ">
+            <div class="guarantee col-6 mt-3 p-3 d-flex flex-nowrap flex-row justify-content-around">
+                <div class="icon"><img src="img/car.webp" alt=""></div>
+                <div class="textGuarantee">
+                    <span>Техническая гарантия 3 месяца</span>
+                    <p>Все неисправности, которые возникнут в течении трехмесячной гарантии мы исправим за свой
+                        счет.</p>
+                </div>
+            </div>
+            <div class="guarantee col-6 mt-3 p-3 d-flex flex-nowrap flex-row justify-content-around ">
+                <div class="icon"><img src="img/money.webp" alt=""></div>
+                <div class="textGuarantee">
+                    <span>Гарантия полного возврата денег</span>
+                    <p> Если у нас не получится найти автомобиль по вашим параметрам в установленные сроки - вернем
+                        предоплату в 100% объеме</p>
+                </div>
             </div>
         </div>
     </div>
-  <div class="wrapperGuarantees row ">
-      <div class="guarantee col-6 mt-3 p-3 d-flex flex-nowrap flex-row justify-content-around">
-          <div class="icon"><img src="img/car.webp" alt=""></div>
-          <div class="textGuarantee">
-              <span>Техническая гарантия 3 месяца</span>
-              <p>Все неисправности, которые возникнут в течении трехмесячной гарантии мы исправим за свой счет.</p>
-          </div>
-      </div>
-      <div class="guarantee col-6 mt-3 p-3 d-flex flex-nowrap flex-row justify-content-around ">
-          <div class="icon"><img src="img/money.webp" alt=""></div>
-          <div class="textGuarantee">
-              <span>Гарантия полного возврата денег</span>
-              <p> Если у нас не получится найти автомобиль по вашим параметрам в установленные сроки - вернем предоплату в 100% объеме</p>
-          </div>
-      </div>
-  </div>
 </div>
 
-<div class="work_for_result p-4 text-center container-fluid d-flex flex-column flex-nowrap justify-content-center align-items-center">
+<div class=" work_for_result p-4 text-center container-fluid d-flex flex-column flex-nowrap justify-content-center align-items-center">
     <h1 class="p-1 font-weight-bold">Работаем на результат!</h1>
     <h4 class="p-1">Хотите получить пример договора? Укажите Вашу почту и узнайте о выгодных условиях.</h4>
     <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down">Получить договор</button>
@@ -227,110 +237,145 @@
     <h1>&nbsp;— Стоимость&nbsp;наших&nbsp;услуг —&nbsp;</h1>
 </div>
 
-<div class="wrapper_price row">
-    <div class="price_view col-4 card d-flex justify-content-between">
-        <div class="first_part_price">
-            <div class="price_img">
-                <img src="img/price_1.webp" class="card-img-top" alt="">
+<div class="container">
+    <div class="  wrapper_price row">
+        <div class="price_view col-4 card d-flex justify-content-between">
+            <div class="first_part_price">
+                <div class="price_img">
+                    <img src="img/price_1.webp" class="card-img-top" alt="">
+                </div>
+                <div class="price_head">
+                    <h3 class="card-title">Выездная проверка экспертом</h3>
+                </div>
+                <div class="price_text card-text">
+                    <ul>
+                        <li>Проверка по 138 пунктам</li>
+                        <li>Предварительная оценка стоимости автомобиля</li>
+                        <li>Лист о проведенном осмотре и диагностике</li>
+                        <li>Обоснованный торг с продавцом</li>
+                        <li>Скидка 7% при заказе подбора авто под ключ</li>
+                        <li>Рекомендация по приобретению конкретного автомобиля</li>
+                    </ul>
+                </div>
             </div>
-            <div class="price_head">
-                <h3 class="card-title">Выездная проверка экспертом</h3>
-            </div>
-            <div class="price_text card-text">
-                <ul>
-                    <li>Проверка по 138 пунктам</li>
-                    <li>Предварительная оценка стоимости автомобиля</li>
-                    <li>Лист о проведенном осмотре и диагностике</li>
-                    <li>Обоснованный торг с продавцом</li>
-                    <li>Скидка 7% при заказе подбора авто под ключ</li>
-                    <li>Рекомендация по приобретению конкретного автомобиля</li>
-                </ul>
-            </div>
-        </div>
-        <div class="second_part_price">
-            <div class="price text-center">
-                <h2>2 300 руб</h2>
-            </div>
-            <div class="price_button text-center">
-                <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font">Заказать</button>
-            </div>
-        </div>
-    </div>
-    <div class="price_view col-4 card d-flex justify-content-between ">
-       <div class="first_part_price">
-           <div class="price_img">
-               <img src="img/price_2.webp" alt="">
-           </div>
-           <div class="price_head">
-               <h3>Эксперт на 1 день</h3>
-           </div>
-           <div class="price_text">
-               <ul>
-                   <li>Рекомендации по выбору объявлений</li>
-                   <li>Любое количество автомобилей в течении дня</li>
-                   <li>Передвижение на автомобиле нашего эксперта</li>
-                   <li>Проверка по 138 пунктам</li>
-                   <li>Обоснованный торг с продавцом</li>
-                   <li>Сопровождение сделки</li>
-                   <li>Проверка оформления документов</li>
-               </ul>
-           </div>
-       </div>
-        <div class="second_part_price">
-            <div class="price text-center">
-                <h2>6 300 руб</h2>
-            </div>
-            <div class="price_button text-center">
-                <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font">Заказать</button>
+            <div class="second_part_price">
+                <div class="price text-center">
+                    <h2>2 300 руб</h2>
+                </div>
+                <div class="price_button text-center">
+                    <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font">Заказать</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="price_view col-4 card d-flex justify-content-between ">
-        <div class="first_part_price">
-            <div class="price_img">
-                <img src="img/price_3.webp" alt="">
+        <div class="price_view col-4 card d-flex justify-content-between ">
+            <div class="first_part_price">
+                <div class="price_img">
+                    <img src="img/price_2.webp" alt="">
+                </div>
+                <div class="price_head">
+                    <h3>Эксперт на 1 день</h3>
+                </div>
+                <div class="price_text">
+                    <ul>
+                        <li>Рекомендации по выбору объявлений</li>
+                        <li>Любое количество автомобилей в течении дня</li>
+                        <li>Передвижение на автомобиле нашего эксперта</li>
+                        <li>Проверка по 138 пунктам</li>
+                        <li>Обоснованный торг с продавцом</li>
+                        <li>Сопровождение сделки</li>
+                        <li>Проверка оформления документов</li>
+                    </ul>
+                </div>
             </div>
-            <div class="price_head">
-                <h3>Подбор авто под ключ</h3>
-            </div>
-            <div class="price_text">
-                <ul>
-                    <li>Экономия времени и средств</li>
-                    <li>Ищем автомобиль до результата</li>
-                    <li>Проверка по 138 пунктам</li>
-                    <li>Лист о проведенном осмотре и диагностике</li>
-                    <li>Обоснованный торг с продавцом</li>
-                    <li>Оценка стоимости автомобиля на рынке</li>
-                    <li>Экспертная рекомендация по приобретению конкретного авто</li>
-                    <li>Сопровождение сделки при покупке</li>
-                    <li>Проверка оформления документов</li>
-                    <li>Контроль передачи денежных средств</li>
-                </ul>
+            <div class="second_part_price">
+                <div class="price text-center">
+                    <h2>6 300 руб</h2>
+                </div>
+                <div class="price_button text-center">
+                    <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font">Заказать</button>
+                </div>
             </div>
         </div>
-        <div class="second_part_price">
-            <div class="price text-center">
-                <h2>14 300 руб</h2>
+        <div class="price_view col-4 card d-flex justify-content-between ">
+            <div class="first_part_price">
+                <div class="price_img">
+                    <img src="img/price_3.webp" alt="">
+                </div>
+                <div class="price_head">
+                    <h3>Подбор авто под ключ</h3>
+                </div>
+                <div class="price_text">
+                    <ul>
+                        <li>Экономия времени и средств</li>
+                        <li>Ищем автомобиль до результата</li>
+                        <li>Проверка по 138 пунктам</li>
+                        <li>Лист о проведенном осмотре и диагностике</li>
+                        <li>Обоснованный торг с продавцом</li>
+                        <li>Оценка стоимости автомобиля на рынке</li>
+                        <li>Экспертная рекомендация по приобретению конкретного авто</li>
+                        <li>Сопровождение сделки при покупке</li>
+                        <li>Проверка оформления документов</li>
+                        <li>Контроль передачи денежных средств</li>
+                    </ul>
+                </div>
             </div>
-            <div class="price_button text-center">
-                <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font">Заказать</button>
+            <div class="second_part_price">
+                <div class="price text-center">
+                    <h2>14 300 руб</h2>
+                </div>
+                <div class="price_button text-center">
+                    <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font">Заказать</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="  contacts card text-center d-flex flex-column flex-nowrap justify-content-center align-items-center">
+    <h1 class="p-1 font-weight-bold">Контакты</h1>
+    <h4 class="card-title">Мы находимся по адресу: <span class="card-text">Москва, 6-я Радиальная 3к6</span></h4>
+    <h4 class="card-title">Телефон <span class="card-text">+7 (499) 520-69-93</span></h4>
+    <h4 class="card-title">График работы: <span class="card-text">Ежедневно с 09:00 до 21:00</span></h4>
+    <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down text-center">Заказать звонок</button>
+</div>
 
 <div class="maps">
-    <div class="contacts card">
-        <h2 class="card-title">Контакты</h2>
-        <p class="card-title">Мы находимся по адресу:</p>
-        <span class="card-text">Москва, 6-я Радиальная 3к6</span>
-        <p class="card-title">Телефон</p>
-        <span class="card-text">+7 (499) 520-69-93</span>
-         <p class="card-title">График работы:</p>
-        <span class="card-text">Ежедневно с 09:00 до 21:00</span>
-        <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down">Заказать звонок</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.5884114615687!2d37.6645523157836!3d55.6091765805152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab230c951cfc7%3A0x6673dee3ecee4039!2zNi3RjyDQoNCw0LTQuNCw0LvRjNC90LDRjyDRg9C7LiwgMywg0JzQvtGB0LrQstCwLCAxMTU0MDQ!5e0!3m2!1sru!2sru!4v1546532610121"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+<div class=" send_request ">
+    <div class=" container ">
+        <h1 class="text-center ">Закажите бесплатную консультацию</h1>
+        <form method="post"
+              class="  d-flex flex-row flex-nowrap justify-content-center align-content-center align-items-center">
+            <div class="form-group min_w w-25 m-3">
+                <input type="text" class="form-control border-secondary" id="exampleInputEmail1"
+                       aria-describedby="emailHelp"
+                       placeholder="Имя">
+            </div>
+            <div class="form-group min_w w-25 m-3">
+                <input type="tel" class="form-control border-secondary " id="exampleInputPassword1"
+                       placeholder="Телефон">
+            </div>
+
+            <button type="submit" class="min_w btn btn-primary m-3 w-25 button_font">Отправить</button>
+        </form>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.5884114615687!2d37.6645523157836!3d55.6091765805152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab230c951cfc7%3A0x6673dee3ecee4039!2zNi3RjyDQoNCw0LTQuNCw0LvRjNC90LDRjyDRg9C7LiwgMywg0JzQvtGB0LrQstCwLCAxMTU0MDQ!5e0!3m2!1sru!2sru!4v1546532610121"  frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="footer container">
+    <footer class="d-flex flex-nowrap flex-row justify-content-between">
+        <div class="copyright col-4">
+            <p>Copyright © 2018. Копирование информации с сайта запрещено. Все материалы данного сайта являются объектами авторского права.</p>
+        </div>
+        <div class="tel">
+            <a href="tel:+74995206993" class="d-block">+7 (499) 520-69-93</a>
+            <a href="tel:+74955186933" class="d-block">+7 (495) 518-69-33</a>
+            <p>Пн-Вс с 09:00 до 21:00</p>
+
+        </div>
+    </footer>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
