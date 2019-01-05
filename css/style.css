@@ -85,14 +85,15 @@
 .advantage {
     /*min-height: 250px;*/
     width: 100%;
+    height: 100%;
     margin-top: 50px;
     margin-bottom: 75px;
 }
 
 .adv {
     white-space: normal;
-    /*max-width: 238px;*/
-    /*min-width: 190px;*/
+    width: 100%;
+    height: 100%;
     color: rgb(19, 19, 19);
 }
 
@@ -345,6 +346,7 @@
 }
 
 .price_view:hover {
+    transition:all 0.2s ease-in-out;
     filter: brightness(92%);
     transform: scale(1.01, 1.01);
 }
@@ -376,4 +378,40 @@
 .copyright {
     font: normal normal normal 15px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
     color: #2F2E2E;
+}
+.footer{
+    background: url("../img/footer.jpg") 100% 100%
+}
+.box-shadow{
+    box-shadow: darkgrey 2px 4px;
+
+}
+.box-shadow:hover{
+    /*transition:all 1s ease-in-out;*/
+    /*box-shadow: darkgrey 4px 6px;
+    transform: rotateY(360deg);*/
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .wrapper_advantage {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
 }
