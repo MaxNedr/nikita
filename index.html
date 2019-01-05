@@ -13,10 +13,10 @@
 
 <body class=" body">
 <header class=" container align-items-center d-flex justify-content-between">
-    <div class="logo m-1"><img src="img/Logo_prime.webp" alt="logo"></div>
-    <div class="label m-1"><p class="title">ПОДБОР АВТО ПОД КЛЮЧ</p></div>
-    <div class="contact m-1 text-center"><h2><a href="tel:+74995206993" target="_blank">+7 (499)520-69-93</a></h2>
-        <h5><i>Ежедневно с 9:00 до 21:00</i></h5></div>
+    <div class="logo m-1 col-3"><img src="img/Logo_prime.webp" alt="logo"></div>
+    <div class="label m-1 col-6"><h1 class="title">ПОДБОР АВТО ПОД КЛЮЧ</h1></div>
+    <div class="contact m-1 col-3 text-center"><h4><a href="tel:+74995206993" target="_blank">+7 (499)520-69-93</a></h4>
+        <h6><i>Ежедневно с 9:00 до 21:00</i></h6></div>
 </header>
 <nav class=" container navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,31 +44,41 @@
     </div>
 </nav>
 
-<div class="container d-flex justify-content-center mt-4 ">
-    <img src="img/bmw_main.jpg" class="w-75 h-75 " alt="">
-</div>
-<div class="plate_wrapper container">
-    <div class="plate">
-        <span class="diagnostik"> Выездная диагностика <br> Оценка состояния автомобиля</span>
-        <p>Наши эксперты подбирают лучшие варианты автомобилей для наших клиентов с гарантией технической и
-            юридической чистоты</p>
+<div class="container wrapper_out_plate d-flex justify-content-center mt-4 ">
+    <img src="img/car_top1.webp" class="w-100 h-100 " alt="">
+    <div class="plate_wrapper w-25 h-25 ">
+        <div class="plate">
+            <h3 class="diagnostik"> Выездная диагностика <br> Оценка состояния автомобиля</h3>
+            <h6>Наши эксперты подбирают лучшие варианты автомобилей для наших клиентов с гарантией технической и
+                юридической чистоты</h6>
+        </div>
     </div>
 </div>
-<div class="advantage d-flex flex-row flex-wrap justify-content-center">
-    <div class="first_advantage w-25 m-1 p-2 adv text-center">
-        <div class="wrapper_p"><p><b>3</b> года продуктивной работы</p></div>
-        <span>За это время у нас сформировался достаточный опыт, позволяющий учитывать все нюансы при подборе авто</span>
+
+<div class=" work_for_result p-4 text-center  d-flex flex-column flex-nowrap justify-content-center align-items-center">
+    <div class="container"><h1 class="p-1 font-weight-bold">Выездная диагностика <br> Оценка состояния автомобиля</h1>
+        <h4 class="p-1">Наши эксперты подбирают лучшие варианты автомобилей для наших клиентов с гарантией технической и
+            юридической чистоты</h4>
+        <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down">Оставить заявку</button></div>
+</div>
+
+<div class="container">
+    <div class="advantage row flex-wrap justify-content-center">
+        <div class="first_advantage   p-2 adv text-center col-3 col-md-5 col-xl-3">
+            <div class="wrapper_p"><p><b>3</b> года продуктивной работы</p></div>
+            <span>За это время у нас сформировался достаточный опыт, позволяющий учитывать все нюансы при подборе авто</span>
+        </div>
+        <div class="second_advantage   p-2 adv text-center col-3 col-md-5 col-xl-3">
+            <div class="wrapper_p"><p>Более <b>9000</b> проверенных автомобилей</p></div>
+            <span>Ваш автомобиль будут подбирать высококлассные эксперты, проверившие уже более 9000 автомобилей</span>
+        </div>
+        <div class="third_advantage   p-2 adv text-center col-3 col-md-5 col-xl-3">
+            <div class="wrapper_p"><p>Свыше <b>4000</b> человек</p></div>
+            <span>Воспользовались нашими услугами и остались довольными результатом</span></div>
+        <div class="four_advantage   p-2 adv text-center col-3 col-md-5 col-xl-3">
+            <div class="wrapper_p"><p><b>138</b> пунктов проверки авто</p></div>
+            <span>138 пунктов проверки автомобилей позволяют нам найти лучшее предложение для наших клиентов</span></div>
     </div>
-    <div class="second_advantage w-25 m-1 p-2 adv text-center">
-        <div class="wrapper_p"><p>Более <b>9000</b> проверенных автомобилей</p></div>
-        <span>Ваш автомобиль будут подбирать высококлассные эксперты, проверившие уже более 9000 автомобилей</span>
-    </div>
-    <div class="third_advantage w-25 m-1 p-2 adv text-center">
-        <div class="wrapper_p"><p>Свыше <b>4000</b> человек</p></div>
-        <span>Воспользовались нашими услугами и остались довольными результатом</span></div>
-    <div class="four_advantage w-25 m-1 p-2 adv text-center">
-        <div class="wrapper_p"><p><b>138</b> пунктов проверки авто</p></div>
-        <span>138 пунктов проверки автомобилей позволяют нам найти лучшее предложение для наших клиентов</span></div>
 </div>
 <div class="container text-center what_we_check ">
     <h1>&nbsp;— Что мы проверяем —&nbsp;</h1>
@@ -350,12 +360,12 @@
         <form method="post"
               class="  d-flex flex-row flex-nowrap justify-content-center align-content-center align-items-center">
             <div class="form-group min_w w-25 m-3">
-                <input type="text" class="form-control border-secondary" id="exampleInputEmail1"
+                <input type="text" class="form-control border-secondary" id="example1InputEmail1"
                        aria-describedby="emailHelp"
                        placeholder="Имя">
             </div>
             <div class="form-group min_w w-25 m-3">
-                <input type="tel" class="form-control border-secondary " id="exampleInputPassword1"
+                <input type="tel" class="form-control border-secondary " id="example1InputPassword1"
                        placeholder="Телефон">
             </div>
 
