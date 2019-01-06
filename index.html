@@ -8,7 +8,9 @@
     </style>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class=" body">
@@ -45,7 +47,7 @@
 </nav>
 
 <div class="container wrapper_out_plate d-flex justify-content-center mt-4 ">
-    <img src="img/car_top1.webp" class="w-100 h-100 " alt="">
+    <img src="img/car_top1.webp" class="w-100 h-100 animated bounceInRight " alt="">
     <div class="plate_wrapper w-25 h-25 ">
         <div class="plate">
             <h3 class="diagnostik"> Выездная диагностика <br> Оценка состояния автомобиля</h3>
@@ -55,8 +57,8 @@
     </div>
 </div>
 
-<div class=" work_for_result p-4 text-center  d-flex flex-column flex-nowrap justify-content-center align-items-center">
-    <div class="container"><h1 class="p-1 font-weight-bold">Выездная диагностика <br> Оценка состояния автомобиля</h1>
+<div class=" work_for_result p-4 text-center  d-flex flex-column flex-nowrap justify-content-center align-items-center  ">
+    <div class="container d-none first_tape" id="first_tape"><h1 class="p-1 font-weight-bold">Выездная диагностика <br> Оценка состояния автомобиля</h1>
         <h4 class="p-1">Наши эксперты подбирают лучшие варианты автомобилей для наших клиентов с гарантией технической и
             юридической чистоты</h4>
         <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down">Оставить заявку</button>
@@ -65,24 +67,24 @@
 
 <div class="container">
     <div class="advantage row flex-wrap justify-content-center">
-        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3">
+        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3 animated infinite pulse  delay-2s">
             <div class="first_advantage   p-2 adv text-center ">
                 <div class="wrapper_p"><p><b>3</b> года продуктивной работы</p></div>
                 <span>За это время у нас сформировался достаточный опыт, позволяющий учитывать все нюансы при подборе авто</span>
             </div>
         </div>
-        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3">
+        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3 animated infinite pulse  delay-2s">
             <div class="second_advantage   p-2 adv text-center ">
                 <div class="wrapper_p"><p>Более <b>9000</b> проверенных автомобилей</p></div>
                 <span>Ваш автомобиль будут подбирать высококлассные эксперты, проверившие уже более 9000 автомобилей</span>
             </div>
         </div>
-        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3">
+        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3 animated infinite pulse delay-2s">
             <div class="third_advantage   p-2 adv text-center ">
                 <div class="wrapper_p"><p>Свыше <b>4000</b> человек</p></div>
                 <span>Воспользовались нашими услугами и остались довольными результатом</span></div>
         </div>
-        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3">
+        <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3 animated infinite pulse  delay-2s">
             <div class="four_advantage   p-2 adv text-center ">
                 <div class="wrapper_p"><p><b>138</b> пунктов проверки авто</p></div>
                 <span>138 пунктов проверки автомобилей позволяют нам найти лучшее предложение для наших клиентов</span>
@@ -92,9 +94,11 @@
 
     </div>
 </div>
+
 <div class="container text-center what_we_check ">
     <h1>&nbsp;— Что мы проверяем —&nbsp;</h1>
 </div>
+
 <div class="container d-flex flex-column">
     <div class="container  mt-5 car_top">
         <div class="wrapper_car_body_center d-flex justify-content-center">
@@ -155,6 +159,7 @@
         </div>
     </div>
 </div>
+
 <div class="">
     <div class=" send_request ">
         <div class=" container wrapper_send_out">
@@ -178,6 +183,7 @@
         </div>
     </div>
 </div>
+
 <div class="container text-center what_we_check ">
     <h1>&nbsp;— Как мы работаем —&nbsp;</h1>
 </div>
@@ -249,10 +255,12 @@
     </div>
 </div>
 
-<div class=" work_for_result p-4 text-center container-fluid d-flex flex-column flex-nowrap justify-content-center align-items-center">
-    <h1 class="p-1 font-weight-bold">Работаем на результат!</h1>
-    <h4 class="p-1">Хотите получить пример договора? Укажите Вашу почту и узнайте о выгодных условиях.</h4>
-    <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down">Получить договор</button>
+<div class="container-fluid work_for_result">
+    <div class=" delay-1s p-4 text-center  d-none flex-column flex-nowrap justify-content-center align-items-center" id="second_tape">
+        <h1 class="p-1 font-weight-bold">Работаем на результат!</h1>
+        <h4 class="p-1">Хотите получить пример договора? Укажите Вашу почту и узнайте о выгодных условиях.</h4>
+        <button class="min_w btn btn-primary m-3 mb-0 w-25 button_font_down">Получить договор</button>
+    </div>
 </div>
 
 <div class="container text-center what_we_check ">
@@ -352,6 +360,7 @@
         </div>
     </div>
 </div>
+
 <div class="  contacts card text-center d-flex flex-column flex-nowrap justify-content-center align-items-center">
     <h1 class="p-1 font-weight-bold">Контакты</h1>
     <h4 class="card-title">Мы находимся по адресу: <span class="card-text">Москва, 6-я Радиальная 3к6</span></h4>
@@ -410,6 +419,7 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 
