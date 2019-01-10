@@ -349,7 +349,7 @@
 }
 
 .price_view:hover {
-    transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     filter: brightness(92%);
     transform: scale(1.01, 1.01);
 }
@@ -382,14 +382,17 @@
     font: normal normal normal 15px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
     color: #2F2E2E;
 }
-.footer{
+
+.footer {
     /*background: url("../img/footer.jpg") 100% 100%*/
 }
-.box-shadow{
+
+.box-shadow {
     box-shadow: darkgrey 2px 4px;
 
 }
-.box-shadow:hover{
+
+.box-shadow:hover {
     /*transition:all 1s ease-in-out;*/
     /*box-shadow: darkgrey 4px 6px;
     transform: rotateY(360deg);*/
@@ -398,22 +401,23 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes spin {
     from {
-        transform:rotateY(0deg);
+        transform: rotateY(0deg);
     }
     to {
-        transform:rotateY(360deg);
+        transform: rotateY(360deg);
     }
 }
 
-.wrapper_advantage{
+.wrapper_advantage {
     animation-duration: 3s;
     animation-delay: 2s;
     border-radius: 5px;
 }
 
-.first_tape{
+.first_tape {
     animation-delay: 0.5s;
 }
 
@@ -425,3 +429,5 @@
         max-width: 25%;
     }
 }
+
+
