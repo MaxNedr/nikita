@@ -1,4 +1,4 @@
-a {
+#awesome {
   position: relative;
   display: inline-block;
   padding: 1.2em 2em;
@@ -7,7 +7,7 @@ a {
   cursor: pointer;
   user-select: none;
   color: white; }
-  a::before {
+  #awesome::before {
     content: '';
     position: absolute;
     top: 0;
@@ -20,9 +20,9 @@ a {
     will-change: transform;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px)); }
-  a:hover::before {
+  #awesome:hover::before {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
-  a::after {
+  #awesome::after {
     position: relative;
     display: inline-block;
     content: attr(data-title);
@@ -32,7 +32,7 @@ a {
     will-change: transform;
     transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)); }
 
-body {
+.bodyfy {
   display: flex;
   align-items: center;
   justify-content: center;

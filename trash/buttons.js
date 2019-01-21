@@ -1,7 +1,7 @@
 'use strict';
 
 var docStyle = document.documentElement.style;
-var aElem = document.querySelector('a');
+var aElem = document.querySelector('#awesome');
 var boundingClientRect = aElem.getBoundingClientRect();
 
 aElem.onmousemove = function (e) {
