@@ -11,37 +11,38 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="trash/style_button.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
 
 <body class=" body">
-<header class=" container align-items-center d-flex justify-content-between">
+<header class=" container align-items-center d-flex justify-content-between" id="header" >
     <div class="logo m-1 col-3"><img src="img/Logo_prime.webp" alt="logo"></div>
     <div class="label m-1 col-6"><h1 class="title">ПОДБОР АВТО ПОД КЛЮЧ</h1></div>
     <div class="contact m-1 col-3 text-center"><h4><a href="tel:+74995206993" target="_blank">+7 (499)520-69-93</a></h4>
         <h6><i>Ежедневно с 9:00 до 21:00</i></h6></div>
 </header>
-<nav class=" container navbar navbar-expand-lg navbar-light bg-light">
+<nav class=" container navbar navbar-expand-lg navbar-light bg-light" id="menu">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-flex justify-content-around w-100">
             <li class="nav-item">
-                <a class="menu nav-link text-uppercase  " href="#"> Главная </a>
+                <a class="menu nav-link text-uppercase  " href="#header"> Главная </a>
             </li>
             <li class="border-left"></li>
             <li class="nav-item">
-                <a class="menu nav-link text-uppercase  " href="#"> О НАС</a>
+                <a class="menu nav-link text-uppercase  " href="#about_us"> О НАС</a>
             </li>
             <li class="border-left"></li>
             <li class="nav-item">
-                <a class="menu nav-link text-uppercase  " href="#">Услуги и цены</a>
+                <a class="menu nav-link text-uppercase  " href="#price">Услуги и цены</a>
             </li>
             <li class="border-left"></li>
             <li class="nav-item">
-                <a class="menu nav-link text-uppercase  " href="#">Гарантии</a>
+                <a class="menu nav-link text-uppercase  " href="#guarantees">Гарантии</a>
             </li>
             <li class="border-left"></li>
             <li class="nav-item">
-                <a class="menu nav-link text-uppercase  " href="#">контакты</a>
+                <a class="menu nav-link text-uppercase  " href="#contacts">контакты</a>
             </li>
         </ul>
     </div>
@@ -66,7 +67,8 @@
     </div>
 </div>
 
-<div class="container">
+
+<div class="container" id="about_us">
     <div class="advantage row flex-wrap justify-content-center">
         <div class="wrapper_advantage  p-1 col-3 col-sm-5 col-xl-3 animated infinite pulse  delay-2s">
             <div class="first_advantage   p-2 adv text-center ">
@@ -209,7 +211,8 @@
     <button class="min_w btn btn-primary m-3 w-50  button_font_down mt-5">Подобрать лучший автомобиль</button>
 </div>
 
-<div class="container text-center what_we_check ">
+
+<div class="container text-center what_we_check  " id="guarantees">
     <h1>&nbsp;— Мы&nbsp;предоставляем 4&nbsp;вида гарантии —&nbsp;</h1>
 </div>
 
@@ -264,9 +267,10 @@
     </div>
 </div>
 
-<div class="container text-center what_we_check ">
+<div class="container text-center what_we_check " id="price">
     <h1>&nbsp;— Стоимость&nbsp;наших&nbsp;услуг —&nbsp;</h1>
 </div>
+
 
 <div class="container">
     <div class="  wrapper_price row">
@@ -362,7 +366,8 @@
     </div>
 </div>
 
-<div class="  contacts card text-center d-flex flex-column flex-nowrap justify-content-center align-items-center">
+
+<div class="  contacts card text-center d-flex flex-column flex-nowrap justify-content-center align-items-center" id="contacts">
     <h1 class="p-1 font-weight-bold">Контакты</h1>
     <h4 class="card-title">Мы находимся по адресу: <span class="card-text">Москва, 6-я Радиальная 3к6</span></h4>
     <h4 class="card-title">Телефон <span class="card-text">+7 (499) 520-69-93</span></h4>
@@ -413,14 +418,15 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <!--<script src="trash/buttons.js"></script>-->
+<script src="js/script_for_hrefs.js"></script>
 <script src="js/script.js"></script>
 
 </body>
