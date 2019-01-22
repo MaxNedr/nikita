@@ -466,3 +466,17 @@
     transition: all linear 0.2s;
     color: #fff;
 }
+
+.dialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.back_dialog{
+    width: 100%;
+    height: 100%;
+    background: #2F2E2E;
+    position: absolute;
+    z-index: 99999999;
+}
