@@ -440,7 +440,7 @@
 
 #back-top a {
     width: 77px;
-    height: 30px;
+    height: 50px;
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.25);
     display: flex;
@@ -458,7 +458,7 @@
 
 #back-top a:hover {
     height: 70px;
-    background: #663399;
+    background: #007bff;
     -webkit-transition: all linear 0.2s;
     -moz-transition: all linear 0.2s;
     -ms-transition: all linear 0.2s;
