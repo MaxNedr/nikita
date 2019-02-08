@@ -18,14 +18,42 @@
     e.target.style.setProperty('--y', y + 'px');
 
 };*/
-/*$(window).scroll(function () {
+(function ($) {
+    $(function () {
+        let width = screen.width;
+
+
+        if (width<768){
+            $('#multiple-items').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        }else {
+            $('#multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        }
+    });
+
+
+
+$(window).scroll(function () {
 
     let el2 = $('#second_tape');
     if ($(this).scrollTop() > el2.offset().top + 3250) {
         el2.addClass('d-flex animated fadeIn ');
     }
 
-});*/
+
+
+});
 
 $('.button_for_dialog').on('click', function () {
 
@@ -39,3 +67,4 @@ $('#close_dialog').on('click', function () {
 
 });
 
+})(jQuery);
