@@ -40,6 +40,9 @@
                 autoplaySpeed: 3000
             });
         }
+
+        const date = new Date();
+        $('#date').html(date.getFullYear());
     });
 
 
