@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>PRIME AUTO</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
@@ -10,6 +17,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="trash/style_button.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -35,7 +44,7 @@
 
             <button type="submit" class="btn btn-primary">Отправить</button>
         </form>
-        <button class="btn btn-primary " id="close_dialog">X</button>
+        <button class="btn btn-danger close_dialog" id="close_dialog">X</button>
     </div>
 </div>
 <header class="container align-items-center my_navbar justify-content-between" id="header">
@@ -47,9 +56,9 @@
 <nav class=" container navbar navbar-expand-lg navbar-light bg-light" id="menu">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav my_navbar justify-content-around w-100">
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="menu nav-link text-uppercase  " href="#header"> Главная </a>
-            </li>
+            </li>-->
             <li class="border-left"></li>
             <li class="nav-item">
                 <a class="menu nav-link text-uppercase  " href="#about_us"> О НАС</a>
@@ -64,8 +73,13 @@
             </li>
             <li class="border-left"></li>
             <li class="nav-item">
+                <a class="menu nav-link text-uppercase  " href="#clients">Наши клиенты</a>
+            </li>
+            <li class="border-left"></li>
+            <li class="nav-item">
                 <a class="menu nav-link text-uppercase  " href="#contacts">контакты</a>
             </li>
+            <li class="border-left"></li>
         </ul>
     </div>
 </nav>
@@ -81,8 +95,10 @@
     </div>
 </div>
 
-<div class="container" id="back-top">
-    <a href="#" id="up">вверх</a>
+<div class="container">
+    <div class="" id="back-top">
+        <a href="#" id="up">вверх</a>
+    </div>
 </div>
 <div
     class=" work_for_result p-4 text-center  d-flex flex-column flex-nowrap justify-content-center align-items-center  ">
@@ -395,6 +411,160 @@
     </div>
 </div>
 
+<div class="container mt-5" id="clients">
+    <h1 class="text-center"> - Наши клиенты - </h1>
+    <div id="multiple-items" class="d-block mt-5">
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/1client1.webp" alt="">
+                <div class="description_item">
+                    <span>Анатолий</span>
+                    <p> Ford Explorer</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2015</li>
+                        <li>Пробег: 57 000</li>
+                        <li>Двигатель: 3.5 (249 л.с.) - Бензин</li>
+                        <li>КПП: Автомат</li>
+                        <li>Полный привод</li>
+                        <li>Владельцы: 2</li>
+                        <li><span class="red">Цена до торга:</span> 2 050 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 2 000 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/2client2.webp" alt="">
+                <div class="description_item">
+                    <span>Дмитрий</span>
+                    <p>Subaru Outback</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2011</li>
+                        <li>Пробег: 178 000</li>
+                        <li>Двигатель: 2.5 (167 л.с.) - Бензин</li>
+                        <li>КПП: Вариатор </li>
+                        <li>Полный привод</li>
+                        <li>Владельцы: 1</li>
+                        <li><span class="red">Цена до торга:</span> 790 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 780 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/3client.webp" alt="">
+                <div class="description_item">
+                    <span>Сергей</span>
+                    <p>Skoda Superb</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2007</li>
+                        <li>Пробег: 240 000</li>
+                        <li>Двигатель: 1.8 (150 л.с.) - Бензин</li>
+                        <li>КПП: Автомат</li>
+                        <li>Передний привод</li>
+                        <li>Владельцы: 2</li>
+                        <li><span class="red">Цена до торга:</span> 390 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 340 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/4client.webp" alt="">
+                <div class="description_item">
+                    <span>Игорь</span>
+                    <p>Toyota Camry xv50</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2012</li>
+                        <li>Пробег: 140 000</li>
+                        <li>Двигатель: 2.5 (181 л.с.) - Бензин</li>
+                        <li>КПП: Автомат </li>
+                        <li>Полный привод</li>
+                        <li>Владельцы: 1</li>
+                        <li><span class="red">Цена до торга:</span> 995 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 970 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/5client.webp" alt="">
+                <div class="description_item">
+                    <span>Василий</span>
+                    <p>Infinity QX70</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2014</li>
+                        <li>Пробег: 120 000</li>
+                        <li>Двигатель: 3.7 (333 л.с.) - Бензин</li>
+                        <li>КПП: Автомат</li>
+                        <li>Полный привод</li>
+                        <li>Владельцы: 2</li>
+                        <li><span class="red">Цена до торга:</span> 1 590 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 1 500 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/6client.webp" alt="">
+                <div class="description_item">
+                    <span>Михаил</span>
+                    <p>BMW 116i</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2006</li>
+                        <li>Пробег: 187 000</li>
+                        <li>Двигатель: 1.6 (116 л.с.) - Бензин</li>
+                        <li>КПП: Механика </li>
+                        <li>Задний привод</li>
+                        <li>Владельцы: 3</li>
+                        <li><span class="red">Цена до торга:</span> 360 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 310 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper_item">
+                <img src="img/7client.webp" alt="">
+                <div class="description_item">
+                    <span>Роман</span>
+                    <p>BMW 523i</p>
+                </div>
+                <div class="options_cars">
+                    <ul>
+                        <li>Год выпуска: 2011</li>
+                        <li>Пробег: 150 000</li>
+                        <li>Двигатель: 2.5 (204 л.с.) - Бензин</li>
+                        <li>КПП: Автомат </li>
+                        <li>Задний привод</li>
+                        <li>Владельцы: 3</li>
+                        <li><span class="red">Цена до торга:</span> 1 220 000 руб.</li>
+                        <li><span class="green">Цена после торга:</span> 1 080 000 руб. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
 
 <div class="  contacts card text-center d-flex flex-column flex-nowrap justify-content-center align-items-center"
      id="contacts">
@@ -449,18 +619,16 @@
 </div>
 
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--<script src="trash/buttons.js"></script>-->
 <script src="js/script_for_hrefs.js"></script>
 <script src="js/button_up.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
 
