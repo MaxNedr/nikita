@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>PRIME AUTO</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
@@ -19,29 +26,29 @@
 <body class=" body">
 <div class="back_dialog" id="back_dialog">
     <div class="dialog d-flex position-fixed w-100 h-100">
-        <form>
+        <form action="send.php" method="post">
 
             <div class="form-group text-white">
                 <label for="exampleInputPassword1">Имя</label>
-                <input type="text" class="form-control" id="exampleInputPassword11" placeholder="Имя">
+                <input type="text" name="fio" class="form-control" id="exampleInputPassword11" placeholder="Имя" required>
             </div>
             <div class="form-group text-white">
                 <label for="exampleInputPassword1">Телефон</label>
-                <input type="text" class="form-control" id="exampleInputPhone11" placeholder="Телефон">
+                <input type="text" name="tel" class="form-control" id="exampleInputPhone11" placeholder="Телефон" required>
             </div>
 
             <div class="form-group text-white">
                 <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail11" aria-describedby="emailHelp" placeholder="Введите email">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail11" aria-describedby="emailHelp" placeholder="Введите email" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Отправить</button>
         </form>
-        <button class="btn btn-primary " id="close_dialog">X</button>
+        <button class="btn btn-danger close_dialog" id="close_dialog">X</button>
     </div>
 </div>
 <header class="container align-items-center my_navbar justify-content-between" id="header">
-    <div class="logo m-1 col-3"><img src="img/Logo_prime.webp" alt="logo"></div>
+    <div class="logo m-1 col-3"><img src="img/logo_prime.png" alt="logo"></div>
     <div class="label m-1 col-6"><h1 class="title">ПОДБОР АВТО ПОД КЛЮЧ</h1></div>
     <div class="contact m-1 col-3 text-center"><h4><a href="tel:+74995206993" target="_blank">+7 (499)520-69-93</a></h4>
         <h6><i>Ежедневно с 9:00 до 21:00</i></h6></div>
@@ -49,9 +56,9 @@
 <nav class=" container navbar navbar-expand-lg navbar-light bg-light" id="menu">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav my_navbar justify-content-around w-100">
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="menu nav-link text-uppercase  " href="#header"> Главная </a>
-            </li>
+            </li>-->
             <li class="border-left"></li>
             <li class="nav-item">
                 <a class="menu nav-link text-uppercase  " href="#about_us"> О НАС</a>
@@ -66,14 +73,19 @@
             </li>
             <li class="border-left"></li>
             <li class="nav-item">
+                <a class="menu nav-link text-uppercase  " href="#clients">Наши клиенты</a>
+            </li>
+            <li class="border-left"></li>
+            <li class="nav-item">
                 <a class="menu nav-link text-uppercase  " href="#contacts">контакты</a>
             </li>
+            <li class="border-left"></li>
         </ul>
     </div>
 </nav>
 
 <div class="container wrapper_out_plate d-flex justify-content-center mt-4 ">
-    <img src="img/car_top1.webp" class="w-100 h-100 animated bounceInRight " alt="">
+    <img src="img/car_top1.png" class="w-100 h-100 animated bounceInRight " alt="">
     <div class="plate_wrapper w-25 h-25 ">
         <div class="plate">
             <h3 class="diagnostik"> Выездная диагностика <br> Оценка состояния автомобиля</h3>
@@ -138,57 +150,57 @@
     <div class="container  mt-5 car_top">
         <div class="wrapper_car_body_center d-flex justify-content-center">
             <div class="wrapper_car_body d-flex justify-content-center w-100">
-                <div class="car_body "><span>Кузов</span><img src="img/kuzov.webp" class="car_body_img" alt=""></div>
+                <div class="car_body "><span>Кузов</span><img src="img/kuzov.png" class="car_body_img" alt="" title="Проверка кузова на возможные деформации и лакокрасочные работы" ></div>
             </div>
         </div>
         <div
             class="container wrapper_over_icon d-flex flex-column align-items-center flex-nowrap justify-content-center">
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/tormoz.webp" alt="" class="icon_img">
+                    <img src="img/tormoz.png" alt="" class="icon_img">
                     <p><span>Тормоза</span></p></div>
                 <div class="car_over pl-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/koleso.webp" alt="" class="icon_img">
+                    <img src="img/koleso.png" alt="" class="icon_img">
                     <p><span>Колеса</span></p></div>
             </div>
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/rule.webp" alt="" class="icon_img">
+                    <img src="img/rule.png" alt="" class="icon_img">
                     <p><span>Рулевое управление</span></p></div>
                 <div class="car_over pl-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/korobka.webp" alt="" class="icon_img">
+                    <img src="img/korobka.png" alt="" class="icon_img">
                     <p><span>КПП</span></p></div>
             </div>
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/salon.webp" alt="" class="icon_img">
+                    <img src="img/salon.png" alt="" class="icon_img">
                     <p><span>Салон</span></p></div>
                 <div class="car_over pl-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/engine.webp" alt="" class="icon_img">
+                    <img src="img/engine.png" alt="" class="icon_img">
                     <p><span>Двигатель</span></p></div>
             </div>
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/lower.webp" alt="" class="icon_img">
+                    <img src="img/lower.png" alt="" class="icon_img">
                     <p><span>Юр. чистота</span></p></div>
                 <div class="car_over pl-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/pribor.webp" alt="" class="icon_img">
+                    <img src="img/pribor.png" alt="" class="icon_img">
                     <p><span>Приборы</span></p></div>
             </div>
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/turbo.webp" alt="" class="icon_img">
+                    <img src="img/turbo.png" alt="" class="icon_img">
                     <p><span>Турбина</span></p></div>
                 <div class="car_over pl-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/batery.webp" alt="" class="icon_img">
+                    <img src="img/batery.png" alt="" class="icon_img">
                     <p><span>АКБ</span></p></div>
             </div>
             <div class="wrapper_inside_over_icon mb-2 d-flex justify-content-center">
                 <div class="car_over pr-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/armor.webp" alt="" class="icon_img">
+                    <img src="img/armor.png" alt="" class="icon_img">
                     <p><span>Амортизаторы</span></p></div>
                 <div class="car_over pl-5 d-flex flex-nowrap flex-column justify-content-center align-items-center ">
-                    <img src="img/vihlop.webp" alt="" class="icon_img">
+                    <img src="img/vihlop.png" alt="" class="icon_img">
                     <p><span>Выхлопная система</span></p></div>
             </div>
         </div>
@@ -200,15 +212,15 @@
         <div class=" container wrapper_send_out">
             <div class="wrapper_send d-flex flex-column flex-nowrap justify-content-center">
                 <h1 class="text-center ">Оставьте заявку на подбор</h1>
-                <form method="post"
+                <form action="send.php" method="post"
                       class="  d-flex flex-column flex-nowrap justify-content-center align-content-center align-items-center">
                     <div class="form-group min_w w-25 m-3">
-                        <input type="text" class="form-control border-secondary" id="exampleInputEmail1"
+                        <input type="text" name="fio" class="form-control border-secondary" id="exampleInputEmail1"
                                aria-describedby="emailHelp"
                                placeholder="Имя">
                     </div>
                     <div class="form-group min_w w-25 m-3">
-                        <input type="tel" class="form-control border-secondary " id="exampleInputPassword1"
+                        <input type="tel" name="tel" class="form-control border-secondary " id="exampleInputPassword1"
                                placeholder="Телефон">
                     </div>
 
@@ -253,7 +265,7 @@
         <div class="wrapperGuarantees row">
             <div class="guarantee col-6 mb-3 p-3 d-flex flex-nowrap flex-row justify-content-around">
                 <div class="icon">
-                    <img src="img/hands.webp" alt="">
+                    <img src="img/hands.png" alt="">
                 </div>
                 <div class="textGuarantee">
                     <span>100% гарантия юридической чистоты</span>
@@ -262,7 +274,7 @@
                 </div>
             </div>
             <div class="guarantee col-6 mb-3 p-3 d-flex flex-nowrap flex-row justify-content-around ">
-                <div class="icon"><img src="img/head.webp" alt=""></div>
+                <div class="icon"><img src="img/head.png" alt=""></div>
                 <div class="textGuarantee ">
                     <span>Проверка собственника автомобиля</span>
                     <p> Мы проводим проверку продавца на наличие долговых обязательств перед государственными органами,
@@ -272,7 +284,7 @@
         </div>
         <div class="wrapperGuarantees row ">
             <div class="guarantee col-6 mt-3 p-3 d-flex flex-nowrap flex-row justify-content-around">
-                <div class="icon"><img src="img/car.webp" alt=""></div>
+                <div class="icon"><img src="img/car.png" alt=""></div>
                 <div class="textGuarantee">
                     <span>Техническая гарантия 3 месяца</span>
                     <p>Все неисправности, которые возникнут в течении трехмесячной гарантии мы исправим за свой
@@ -280,7 +292,7 @@
                 </div>
             </div>
             <div class="guarantee col-6 mt-3 p-3 d-flex flex-nowrap flex-row justify-content-around ">
-                <div class="icon"><img src="img/money.webp" alt=""></div>
+                <div class="icon"><img src="img/money.png" alt=""></div>
                 <div class="textGuarantee">
                     <span>Гарантия полного возврата денег</span>
                     <p> Если у нас не получится найти автомобиль по вашим параметрам в установленные сроки - вернем
@@ -310,7 +322,7 @@
         <div class="price_view col-4 card d-flex justify-content-between">
             <div class="first_part_price">
                 <div class="price_img">
-                    <img src="img/price_1.webp" class="card-img-top" alt="">
+                    <img src="img/price_1.png" class="card-img-top" alt="">
                 </div>
                 <div class="price_head">
                     <h3 class="card-title">Выездная проверка экспертом</h3>
@@ -338,7 +350,7 @@
         <div class="price_view col-4 card d-flex justify-content-between ">
             <div class="first_part_price">
                 <div class="price_img">
-                    <img src="img/price_2.webp" alt="">
+                    <img src="img/price_2.png" alt="">
                 </div>
                 <div class="price_head">
                     <h3>Эксперт на 1 день</h3>
@@ -367,7 +379,7 @@
         <div class="price_view col-4 card d-flex justify-content-between ">
             <div class="first_part_price">
                 <div class="price_img">
-                    <img src="img/price_3.webp" alt="">
+                    <img src="img/price_3.png" alt="">
                 </div>
                 <div class="price_head">
                     <h3>Подбор авто под ключ</h3>
@@ -399,12 +411,16 @@
     </div>
 </div>
 
-<div class="container mt-5">
+
+<div class="container mt-5" id="clients">
+
     <h1 class="text-center"> - Наши клиенты - </h1>
     <div id="multiple-items" class="d-block mt-5">
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/1client1.webp" alt="">
+
+                <img src="img/1client1.png" alt="">
+
                 <div class="description_item">
                     <span>Анатолий</span>
                     <p> Ford Explorer</p>
@@ -425,7 +441,9 @@
         </div>
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/2client2.webp" alt="">
+
+                <img src="img/2client2.png" alt="">
+
                 <div class="description_item">
                     <span>Дмитрий</span>
                     <p>Subaru Outback</p>
@@ -446,7 +464,9 @@
         </div>
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/3client.webp" alt="">
+
+                <img src="img/3client.png" alt="">
+
                 <div class="description_item">
                     <span>Сергей</span>
                     <p>Skoda Superb</p>
@@ -467,7 +487,9 @@
         </div>
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/4client.webp" alt="">
+
+                <img src="img/4client.png" alt="">
+
                 <div class="description_item">
                     <span>Игорь</span>
                     <p>Toyota Camry xv50</p>
@@ -488,7 +510,9 @@
         </div>
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/5client.webp" alt="">
+
+                <img src="img/5client.png" alt="">
+
                 <div class="description_item">
                     <span>Василий</span>
                     <p>Infinity QX70</p>
@@ -509,19 +533,25 @@
         </div>
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/6client.webp" alt="">
+
+                <img src="img/6client.png" alt="">
+
                 <div class="description_item">
                     <span>Михаил</span>
                     <p>BMW 116i</p>
                 </div>
                 <div class="options_cars">
                     <ul>
-                        <li>Год выпуска: 2011</li>
+
+                        <li>Год выпуска: 2006</li>
+
                         <li>Пробег: 187 000</li>
                         <li>Двигатель: 1.6 (116 л.с.) - Бензин</li>
                         <li>КПП: Механика </li>
                         <li>Задний привод</li>
-                        <li>Владельцы: 1</li>
+
+                        <li>Владельцы: 3</li>
+
                         <li><span class="red">Цена до торга:</span> 360 000 руб.</li>
                         <li><span class="green">Цена после торга:</span> 310 000 руб. </li>
                     </ul>
@@ -530,7 +560,9 @@
         </div>
         <div class="item">
             <div class="wrapper_item">
-                <img src="img/7client.webp" alt="">
+
+                <img src="img/7client.png" alt="">
+
                 <div class="description_item">
                     <span>Роман</span>
                     <p>BMW 523i</p>
@@ -541,8 +573,10 @@
                         <li>Пробег: 150 000</li>
                         <li>Двигатель: 2.5 (204 л.с.) - Бензин</li>
                         <li>КПП: Автомат </li>
-                        <li>Полный привод</li>
-                        <li>Владельцы: 1</li>
+
+                        <li>Задний привод</li>
+                        <li>Владельцы: 3</li>
+
                         <li><span class="red">Цена до торга:</span> 1 220 000 руб.</li>
                         <li><span class="green">Цена после торга:</span> 1 080 000 руб. </li>
                     </ul>
@@ -573,15 +607,15 @@
 <div class=" send_request ">
     <div class=" container ">
         <h1 class="text-center ">Закажите бесплатную консультацию</h1>
-        <form method="post"
+        <form action="send.php" method="post"
               class="  d-flex flex-row flex-nowrap justify-content-center align-content-center align-items-center">
             <div class="form-group min_w w-25 m-3">
-                <input type="text" class="form-control border-secondary" id="example1InputEmail1"
+                <input type="text" name="fio" class="form-control border-secondary" id="example1InputEmail1"
                        aria-describedby="emailHelp"
                        placeholder="Имя">
             </div>
             <div class="form-group min_w w-25 m-3">
-                <input type="tel" class="form-control border-secondary " id="example1InputPassword1"
+                <input type="tel" name="tel" class="form-control border-secondary " id="example1InputPassword1"
                        placeholder="Телефон">
             </div>
 
@@ -620,6 +654,3 @@
 </body>
 </html>
 
-<!-- Трешак какой-то <div class="container bodyfy">
-    <a href="#" id="awesome" data-title="Awesome Button"></a>
-</div>-->

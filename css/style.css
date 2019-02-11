@@ -179,7 +179,7 @@
 }
 
 .car_body span:hover {
-    background-color: #30dbff;
+    /*background-color: #30dbff;*/
 }
 
 .car_body span:hover + .car_body_img {
@@ -201,7 +201,7 @@
 }
 
 .car_over span:hover {
-    background-color: #30dbff;
+   /* background-color: #30dbff;*/
 }
 
 .icon_img:hover .car_over {
@@ -393,13 +393,14 @@
 }
 
 .box-shadow:hover {
-    /*transition:all 1s ease-in-out;*/
+    transition:all 0.3s ease-in-out;
     /*box-shadow: darkgrey 4px 6px;
     transform: rotateY(360deg);*/
-    animation-name: spin;
+    /*animation-name: spin;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear;*/
+    border-radius: 130px;
 }
 
 @keyframes spin {
@@ -518,4 +519,17 @@ display: flex;
 }
 .green {
     color: #38C68B;
+}
+.close_dialog{
+    margin-bottom: 22%;
+}
+@media  (max-width: 1140px){
+    .close_dialog{
+        margin-bottom: 30%;
+    }
+}
+@media  (min-width: 2560px){
+    .close_dialog{
+        margin-bottom: 15%;
+    }
 }
