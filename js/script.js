@@ -1,4 +1,6 @@
 'use strict';
+
+
 /*document.querySelector('.button').onmousemove = (e) => {
     const x = e.pageX - e.target.offsetLeft;
     const y = e.pageY - e.target.offsetTop;
@@ -58,7 +60,7 @@ $(window).scroll(function () {
 
 });
 
-$('.button_for_dialog').on('click', function () {
+$('.button_for_dialog, #send_request, #best_car, #contract, #callback ').on('click', function () {
 
     $('#back_dialog').addClass('d-flex').removeClass('d-none')
 
